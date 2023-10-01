@@ -2,5 +2,12 @@
 
 
 {% block content %}
-<h1>содержимое добавление обьявления</h1>
+<form action="{% url 'add_adv' %}">
+    <input type="text" placeholder="Название обьявления">
+    <input type="text" placeholder="Цена">
+    <input type="text" placeholder="Описание обьявления">
+    <input type="text" placeholder="Местонахождение">
+    <input type="date">
+    <input type="button" value="Отправить">
+</form>
 {% endblock %}
