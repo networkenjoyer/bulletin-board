@@ -1,0 +1,39 @@
+.card
+{
+    width: 200px;
+    height: 500px;
+    display: inline-block;
+}
+
+.card-img
+{
+    width: 200px
+    height: 250px;
+}
+
+.card-name
+{
+    width: 200px;
+    height: auto;
+    color: #0099F7;
+}
+
+.card-price
+{
+    width: 200px;
+    height: auto;
+    color: #2F2F2F;
+    font-weight: bolder;
+}
+
+.card-description
+{
+    width: 200px;
+    height: auto;
+}
+
+.card-position-date
+{
+    width: 200px;
+    height: auto;
+}
