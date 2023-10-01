@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
+CSRF_TRUSTED_ORIGINS = ['https://*.proghunter.ru']
 
 INSTALLED_APPS = [
     'django.contrib.admin',

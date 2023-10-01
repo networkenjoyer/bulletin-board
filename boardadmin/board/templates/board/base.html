@@ -5,6 +5,7 @@
     <title>{{ title }}</title>
     <link type="text/css" href="{% static 'board/css/base.css' %}" rel="stylesheet" />
     <link type="text/css" href="{% static 'board/css/card.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'board/css/addingadv.css' %}" rel="stylesheet" />
 </head>
 <body>
 {% block mainmenu %}
@@ -18,7 +19,7 @@
                 <input name="q"  placeholder="Поиск" type="search" />
             </form>
         </div>
-        <a href="#">Подать обьявление</a>
+        <a href="/addadv">Подать обьявление</a>
     </div>
 {% endblock mainmenu %}
 

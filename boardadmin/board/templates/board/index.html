@@ -3,7 +3,9 @@
 {% block content %}
     {% for p in posts %}
         <div class="card">
-
+            <div class="card-img">
+                {{p.photo}}
+            </div>
             <div class="card-name">
                 <p>{{p.name}}</p>
             </div>

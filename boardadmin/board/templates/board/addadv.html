@@ -2,12 +2,13 @@
 
 
 {% block content %}
-<form action="{% url 'add_adv' %}">
-    <input type="text" placeholder="Название обьявления">
-    <input type="text" placeholder="Цена">
-    <input type="text" placeholder="Описание обьявления">
-    <input type="text" placeholder="Местонахождение">
-    <input type="date">
-    <input type="button" value="Отправить">
-</form>
+<div class = "addingadv">
+   <form method="post" enctype="multipart/form-data">
+       {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+
 {% endblock %}
