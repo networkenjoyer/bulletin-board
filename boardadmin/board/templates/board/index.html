@@ -4,7 +4,7 @@
     {% for p in posts %}
         <div class="card">
             <div class="card-img">
-                {{p.photo}}
+                <img src="{{p.photo.url}}" style="height: 200px; width: 200px">
             </div>
             <div class="card-name">
                 <p>{{p.name}}</p>
