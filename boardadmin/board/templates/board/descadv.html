@@ -1,0 +1,31 @@
+{% extends 'board/base.html' %}
+
+{% block content %}
+        <div class="adv">
+
+            <div class="adv-name">
+                <h1><p>{{object.name}}</p></h1>
+            </div>
+
+            <div class="adv-img">
+                <img src="{{object.photo.url}}" style="height: 200px; width: 200px">
+            </div>
+
+            <div class="card-position">
+                <p>{{object.position}}</p>
+            </div>
+
+            <div class="adv-description">
+                <p>{{object.descrip}}</p>
+            </div>
+
+            <div class="adv-price">
+                <p>{{object.price}} ₽</p>
+            </div>
+
+            <div class="adv-date">
+                <p>{{object.date}}</p>
+            </div>
+
+        </div>
+{% endblock %}
