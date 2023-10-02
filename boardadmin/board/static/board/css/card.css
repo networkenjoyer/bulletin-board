@@ -7,8 +7,9 @@
 
 .card-img
 {
-    width: 200px
-    height: 250px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 100px;
 }
 
 .card-name

@@ -2,5 +2,13 @@
 
 
 {% block content %}
-<h1>содержимое добавление обьявления</h1>
+<div class = "addingadv">
+   <form method="post" enctype="multipart/form-data">
+       {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+
 {% endblock %}

@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 class Board(models.Model):
@@ -9,3 +10,6 @@ class Board(models.Model):
     position = models.TextField(blank=False)
     date = models.DateField(auto_now_add=False)
 
+def publish(self):
+    self.published_date = timezone.now()
+    self.save()

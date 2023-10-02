@@ -4,8 +4,12 @@
     {% for p in posts %}
         <div class="card">
 
+            <div class="card-img">
+                <img src="{{p.photo.url}}" style="height: 200px; width: 200px;">
+            </div>
+
             <div class="card-name">
-                <p>{{p.name}}</p>
+                <p><a href="{% url 'adv' p.pk %}">{{p.name}}</a></p>
             </div>
 
             <div class="card-price">
@@ -20,6 +24,7 @@
                 <p>{{p.position}}</p>
                 <p>{{p.date}}</p>
             </div>
+
         </div>
     {% endfor %}
 {% endblock %}
